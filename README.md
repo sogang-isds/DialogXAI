@@ -11,5 +11,7 @@
 [![video](imgs/2022_threat_recognition_xai.png)](https://youtu.be/C5Pj3JnCnkU)
 
 ### 대화기반 설명가능성을 위한 음성대화 시스템 베이스라인 시연
-![video](video/2022_dialog_system_baseline.mp4)
+[![video](imgs/2022_dialog_system_baseline.png)](https://youtu.be/MkLV-zL44lQ)
 
+### 음성 향상을 통한 formant 분석 시연
+[![video](imgs/2022_speech_formant.png)](https://youtu.be/oAatL6tN420)
