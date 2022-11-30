@@ -27,6 +27,12 @@ python transcribe_google.py --file sample.wav
 python transcribe_whisper.py --file sample.wav
 ```
 
+### 위협상황 XAI 분석
+
+```bash
+python demo_plz.py
+```
+
 ## 의료 XAI
 
 ## 법률 XAI
