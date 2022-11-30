@@ -8,7 +8,7 @@
 
 ### 법률분야 위협상황 분류 XAI visualization 시연
 
-![video](video/2022_threat_recognition_xai.mp4)
+![video](https://youtu.be/C5Pj3JnCnkU)
 
 ### 대화기반 설명가능성을 위한 음성대화 시스템 베이스라인 시연
 ![video](video/2022_dialog_system_baseline.mp4)
