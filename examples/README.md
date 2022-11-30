@@ -20,6 +20,13 @@ pip install SpeechRecognition
 python transcribe_google.py --file sample.wav
 ```
 
+#### Whisper ASR
+
+
+```bash
+python transcribe_whisper.py --file sample.wav
+```
+
 ## 의료 XAI
 
 ## 법률 XAI
