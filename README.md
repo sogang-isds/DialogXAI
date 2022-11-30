@@ -23,3 +23,8 @@
 
 ### 음성 향상을 통한 formant 분석 시연
 [![video](imgs/2022_speech_formant.png)](https://youtu.be/oAatL6tN420)
+
+
+## Copyright
+
+본 프로젝트의 저작권은 서강대학교 지능형 음성대화 인터페이스 연구실에 있습니다.
