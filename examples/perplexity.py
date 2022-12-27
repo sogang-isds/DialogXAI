@@ -1,5 +1,5 @@
+import argparse
 import csv
-import os
 
 import torch
 from tqdm import tqdm
@@ -49,7 +49,38 @@ def predict_perplexity(text):
         return 'nan'
 
 
-
 def write_line(f, line):
     print(line)
     f.write(line + '\n')
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--input_file', default='input.csv', type=str)
+    parser.add_argument('--output_file', default='output.csv', type=str)
+    args = parser.parse_args()
+
+    with open(args.input_file, 'r', encoding='utf-8') as f, \
+            open(args.output_file, 'w', encoding='utf-8') as fw:
+
+        reader = csv.reader(f)
+        header = next(reader)
+
+        writer = csv.writer(fw)
+
+        output_header = header.copy()
+        output_header.extend(['ref_ppl', 'hyp_ppl'])
+        writer.writerow(output_header)
+
+        for i, elem in enumerate(reader):
+            audio_filepath = elem[0]
+            reference = elem[1]
+            hypothesis = elem[2]
+
+            ref_ppl = predict_perplexity(reference)
+            hyp_ppl = predict_perplexity(hypothesis)
+
+            elem.append(ref_ppl)
+            elem.append(hyp_ppl)
+
+            writer.writerow(elem)
