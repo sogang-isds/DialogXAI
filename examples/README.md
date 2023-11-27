@@ -27,6 +27,39 @@ python transcribe_google.py --file sample.wav
 python transcribe_whisper.py --file sample.wav
 ```
 
+#### NeMo ASR
+
+##### pip requirements
+
+```
+# NeMo
+nemo-toolkit==1.11
+torchmetrics==0.10.3
+hydra-core
+braceexpand
+webdataset
+youtokentome
+inflect
+editdistance
+jiwer
+pytorch_lightning==1.7
+librosa
+transformers
+pandas
+sentencepiece
+pyannote.core
+pyannote.metrics
+ipywidgets
+```
+
+manifest.json 파일을 미리 준비해야 한다.
+
+```
+python transcribe_nemo.py
+```
+
+
+
 ### 위협상황 XAI 분석
 
 ```bash
